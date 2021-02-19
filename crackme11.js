@@ -7,7 +7,7 @@ let password = '';
 
 const crackme11 = (password) => {
     let dico = bigString.split(' ');
-    let tmp = password.split(' ').filter((elem) => [dico.includes(elem)])
+    let tmp = password.split(' ').filter((elem) => dico.includes(elem));
     let res = '';
     for (let i = 0; i < tmp.length; i++) {
 	res += tmp[i][i];
