@@ -1,6 +1,6 @@
 // Vous devez assigner la bonne string à la variable password ci dessous
 // Et obtenir le message 'OK' en éxecutant le programme
-let password = ''
+let password = 'JustASimplePassword'
 
 const crackme9 = (password) => {
   if (password.startsWith('Just') && password.endsWith('Password')) {
