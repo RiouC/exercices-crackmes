@@ -1,6 +1,6 @@
 // Vous devez assigner la bonne string à la variable password ci dessous
-// Et obtenir le message 'OK' en éxecutant le programme
-let password = ''
+// Et obtenir le message 'GOOD' en éxecutant le programme
+let password = '42?'
 
 const crackme8 = (password) => {
   let tmp1 = password.split('').slice(-3, -1).join('')
