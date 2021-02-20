@@ -3,17 +3,9 @@
 
 
 
-var password='';const crackme12=(password)=>{var i=1n;var x=3n*(10n**1020n);var p=x;while(x>0){x=x*i/((i+1n)*4n);p+=x/(i+2n);i+=2n}var res=String(p/(10n**20n));res=res.split('').slice(0,password.length).map((letter)=>{return parseInt(letter)});var e=(a,à)=>{let asciiCode=a.charCodeAt();if(asciiCode>=65&&asciiCode<=90){return(((asciiCode-65)+à)%26)+65}else if(asciiCode>=97&&asciiCode<=122){return(((asciiCode-97)+à)%26)+97}else if(asciiCode>=123&&asciiCode<=127){return asciiCode}else{return asciiCode+à}}var rez='';for(let j=0;j<password.length;j+=1){rez+=String.fromCharCode(e(password[j],res[j]))}if(rez=="kuxqxC15bzb6hvdwwem2iqs3zdbfjFeBHi?ve1:H2wJ#))kayqs?71wrrm7kernfhtlkuozey0vkv/qwmmd0xhsCbkyoi?NbpneWjog"){console.log('OK')}else{console.log('BAD')}}crackme12(password);
+var password='';const crackme12=(password)=>{var i=1n;var x=3n*(10n**1020n);var p=x;var rez='';while(x>0){x=x*i/((i+1n)*4n);p+=x/(i+2n);i+=2n}var res=String(p/(10n**20n));res=res.split('').slice(0,password.length).map((letter)=>{return parseInt(letter)});var e=(a,à)=>{let asciiCode=a.charCodeAt();if(asciiCode>=65&&asciiCode<=90){return(((asciiCode-65)+à)%26)+65}else if(asciiCode>=97&&asciiCode<=122){return(((asciiCode-97)+à)%26)+97}else if(asciiCode>=123&&asciiCode<=127){return asciiCode}else{return asciiCode+à}};for(let j=0;j<password.length;j+=1){rez+=String.fromCharCode(e(password[j],res[j]))}if(rez=="kuxqxC15bzb6hvdwwem2iqs3zdbfjFeBHi?ve1:H2wJ#))kayqs?71wrrm7kernfhtlkuozey0vkv/qwmmd0xhsCbkyoi?NbpneWjog"){console.log('OK')}else{console.log('BAD')}}
 
-
-
-
-
-
-
-
-
-
+crackme12(password);
 
 
 
